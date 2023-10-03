@@ -1,40 +1,40 @@
 <html>
-    <head>
-        <title>toggle button</title>
-        <style type="text/css">
-            .toggle_input {
-                display: none;
-            }
-            .toggle_lable{
-                display: inline-block;
-                width: 40px;
-                height: 20px;
-                background-color: #ccc;
-                border-radius: 10px;
-                position: relative ;
-                cursor: pointer;
-            }
-            .toggle_input:checked + .toggle_lable{
-                background-color: #4caf50;
-            }
-            .toggle_lable::before{
-                content: "";
-                width: 18px;
-                height: 18px;
-                background-color: white;
-                border-radius: 50%;
-                position: absolute;
-                top: 1px;
-                left: 1px;
-                transition: 0.2s;
-            }
-            .toggle_input:checked + .toggle_lable::before{
-                left: calc(100% - 50%)
-            }
-        </style>
-    </head>
-    <body>
-        <input type="checkbox" id="toggle" class="toggle_input"/>
-        <label for="toggle" class="toggle_lable"></label>
-    </body>
+  <head>
+    <title>toggle button</title>
+    <style type="text/css">
+      .toggle_input {
+        display: none;
+      }
+      .toggle_lable {
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        background-color: #ccc;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+      }
+      .toggle_input:checked + .toggle_lable {
+        background-color: #4caf50;
+      }
+      .toggle_lable::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        transition: 0.2s;
+      }
+      .toggle_input:checked + .toggle_lable::before {
+        left: calc(100% - 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle" class="toggle_input" />
+    <label for="toggle" class="toggle_lable"></label>
+  </body>
 </html>
